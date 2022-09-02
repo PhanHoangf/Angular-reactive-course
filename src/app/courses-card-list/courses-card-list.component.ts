@@ -41,11 +41,8 @@ export class CoursesCardListComponent implements OnInit {
     dialogRef.afterClosed()
       .pipe(
         filter(val => !!val),
-        tap(() => this.coursesChanged.emit()),
       )
       .subscribe();
-
-
   }
 
 }
